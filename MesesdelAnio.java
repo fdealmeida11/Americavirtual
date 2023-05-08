@@ -45,6 +45,8 @@ public class MesesdelAnio {
                                 break;
             case "diciembre" : numeroMes = 12;
              JOptionPane.showMessageDialog(null, "diciembre " + numeroMes + "/12" );;
+            
+             default : JOptionPane.showMessageDialog(null, "eso no es un mes chinchulin");
         }
 
        
