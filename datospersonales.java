@@ -9,8 +9,10 @@ public static void main(String[] args) {
 
     String domicilio = "Jovellanos ";
 
-    System.out.println("mi nombre es " + nombre + "y me apellido " + apellido + " tengo " + edad + " años" + ",vivo en " + domicilio);
-      
+    System.out.println("Nombre: " + nombre );
+    System.out.println("Apellido: " + apellido);
+    System.out.println( "Años: " + edad + " años");
+    System.out.println("Domicilio: " + domicilio);
 }
     
 }
