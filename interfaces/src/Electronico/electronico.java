@@ -35,7 +35,8 @@ public abstract class electronico extends Producto implements Ielectronico{
         @Override
         public String toString() {
             
-            return super.toString() + " Fabricante: " + getFabricante();
+            return super.toString() + " Fabricante: "  
+                     + getFabricante() + " Descripcion: ";
         }
 
        

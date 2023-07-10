@@ -14,6 +14,11 @@ public class TvLcd extends electronico {
     public void setPulgadas(int pulgadas) {
         this.pulgadas = pulgadas;
     }
+    @Override
+    public double getPrecioVenta() {
+        
+        return getPrecio();
+    }
 
   
     @Override

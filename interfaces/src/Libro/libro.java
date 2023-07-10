@@ -9,15 +9,20 @@ public class libro extends Producto implements Ilibro{
     private String Titulo;
     private String Editorial;
 
-
-    public libro(int Precio, LocalDate fechaDePublicacion, String autor, String titulo, String editorial) {
-        super(Precio);
+    public libro(LocalDate fechaDePublicacion, String autor, String titulo, String editorial) {
         FechaDePublicacion = fechaDePublicacion;
         Autor = autor;
         Titulo = titulo;
         Editorial = editorial;
     }
 
+    public libro(int precio, LocalDate fechaDePublicacion, String autor, String titulo, String editorial) {
+        super(precio);
+        FechaDePublicacion = fechaDePublicacion;
+        Autor = autor;
+        Titulo = titulo;
+        Editorial = editorial;
+    }
 
     public void setFechaDePublicacion(LocalDate fechaDePublicacion) {
         FechaDePublicacion = fechaDePublicacion;
@@ -62,8 +67,14 @@ public class libro extends Producto implements Ilibro{
     {
 
     
-}
-    @Override
+}     @Override
+    public double getPrecioVenta() {
+      
+        return getPrecio();
+    }
+
+
+@Override
     public String toString() {
               return super.toString() + " Autor: " + getAutor() + " Nombre " + getTitulo() + " Editorial: " + getEditorial();
     }}

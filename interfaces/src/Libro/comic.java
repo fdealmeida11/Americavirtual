@@ -21,6 +21,7 @@ public class comic extends libro{
             return personaje;
         }
 
+
         @Override
         public String toString() {
             

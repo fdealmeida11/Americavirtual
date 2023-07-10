@@ -27,9 +27,14 @@ public class iphone extends electronico{
         this.color = color;
     }
  
+    @Override
+    public double getPrecioVenta() {
+        
+        return getPrecio();
+    }
 
 
-    
+
     @Override
     public String toString() {
         
